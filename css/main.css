@@ -1,0 +1,145 @@
+*{margin: 0;padding: 0}
+a{text-decoration: none;}
+body { background: #eee;}
+
+@font-face {
+    font-family: BebasBook;
+    src: url(../fonts/BebasNeue/BebasNeue-Book.otf);
+}
+@font-face {
+    font-family: DejaVuSansCon;
+    src: url(../fonts/DejaVuSans/DejaVuSansCondensed.ttf);
+}
+@font-face {
+    font-family: DejaVuSans-Light;
+    src: url(../fonts/DejaVuSans/DejaVuSans-ExtraLight.ttf);
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+    height: 60px;
+}
+.header .logo {
+    font: 44px BebasBook, sans-serif;
+    height: 60px;
+    width: 205px;
+    background: #333;
+    float: left;
+}
+.header .logo a {
+    line-height: 60px;
+    color: #fff;
+    padding: 4px 60px;
+}
+.header .logo a:hover {
+    color: #000;
+    background: #fff;
+    font-size: 44px;
+    transition: all .25s;
+}
+.header .nav-menu {
+    height: 60px;
+}
+.header ul {
+    list-style: none;
+/*    background: #555;*/
+    height: 60px;
+}
+.header li {
+    float: left;
+    font: 20px DejaVuSans-Light, sans-serif;
+    line-height: 60px;
+}
+.header .nav-menu a {
+    padding: 18px 35px;
+    color: #fff;
+}
+.header .nav-menu a:hover {
+    background: #fff;
+    color: #000;
+}
+.header .join {
+    float: right;
+    line-height: 60px;
+}
+.header .join a {
+    font: 18px DejaVuSansCon, sans-serif;
+    line-height: 60px;
+    padding: 20px 24px;
+    color: #fff;
+    background: #333;
+}
+.header .join a:hover {
+    color: #000;
+    background: #fff;
+}
+
+
+.content {
+    margin-top: 35px;
+    padding: 15px 120px;
+    background: #ddd;
+}
+.content .items {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.content .items .item {
+    text-align: center;
+    border: 1px solid #000;
+    flex: 1 1 150px;
+    margin: 20px 20px;
+    max-width: 300px;
+}
+.content .items .photo {
+    max-width: 100%;
+/*    padding: 5px;*/
+}
+.content .items .photo img {
+    max-width: 100%;
+    border-radius: 0%;
+}
+.content .items .title {
+}
+.content .items .title a {
+    font: 32px DejaVuSans-Light, sans-serif;
+    display: inline-block;
+    line-height: 40px;
+    color: #777;
+}
+.content .items .title a:hover {
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+}
