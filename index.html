@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Nrane</title>
     <link rel="stylesheet" href="css/main.css">
+    
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <div class="header">
@@ -18,6 +21,25 @@
         </div>
         <div class="join"><a href="">Բաժանորդագրվել</a></div>
     </div>
+    <div class="sign-up">
+        <form action="data.php" method="post">
+            <input type="text" name="first_name" placeholder="Անուն">
+            <input type="text" name="last_name" placeholder="Ազգանուն">
+            <input type="text" name="email" placeholder="Էլ. հասցե" onblur="checkEmail(this.value)">
+            <p>
+                <label><input type="radio" name="sex" value="male" id="male" checked>Արական</label>
+                <label><input type="radio" name="sex" value="female" id="female">Իգական</label>
+            </p>
+            <p class="be-inline">
+                <input type="checkbox" name="intouch" value="yes" id="news" checked>
+                <label for="news">Հետևել նորություններին</label>
+            </p>
+            <input type="submit" value="Ուղարկել" name="send">
+        </form>
+    </div>
+        
+        
+        
     <div class="content">
         <div class="items">
                <div class="item">

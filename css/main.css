@@ -117,7 +117,79 @@ body { background: #eee;}
     color: #000;
 }
 
-
+.sign-up-hide {
+/*    height: 100%;*/
+}
+.sign-up {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    float: right;
+    height: 0px;
+    height: 265px;
+    overflow: hidden;
+    text-align: center;
+/*    padding-top: 20px;*/
+    background: #333;
+    transition: .6s;
+    transition-timing-function: cubic-bezier(.69, .13, .43, .93);
+}
+.sign-up form {
+    margin-top: 20px;
+/*    background: #333;*/
+}
+.sign-up input[name*="name"], .sign-up input[name="email"] {
+    height: 30px;
+    width: 85%;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    border: 0;
+    padding-left: 10px;
+}
+.sign-up input[name="email"] {
+    margin-bottom: 15px;
+}
+p:nth-of-type(1) {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    color: #ccc;
+    font: 14px Tahoma, sans-serif;
+}
+.sign-up label:first-child {
+    margin-right: 15px;
+}
+.sign-up label:first-child:not(input){padding-bottom: 4px}
+p.be-inline {
+    padding-bottom: 15px;
+    font: 14px Tahoma, sans-serif;
+    color: #ccc;
+}
+.sign-up #male{
+    margin-right: 5px;
+       vertical-align: middle;
+}
+.sign-up #female {
+    margin-right: 5px;
+       vertical-align: middle;
+}
+.sign-up #news {
+    margin-right: 5px;
+       vertical-align: middle;
+}
+input[name="send"] {
+    font: 18px DejaVuSansCon, sans-serif;
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    background: none;
+    border-radius: 8px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+input[name="send"]:hover {
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+}
 
 
 
